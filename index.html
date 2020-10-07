@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Leitor</title>
+
+    <link rel="shortcut icon" href="./images/falando.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="description"
+      content="O Leitor ler seus textos na hora que você mais precisar"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="content">
+        <div contenteditable oninput="setText(event)" class="input-text">
+          Coloque seu texto aqui...
+        </div>
+        <div class="content-btn">
+          <button class="btn falar-yes" onclick="speak()">Falar</button>
+          <button class="btn falar-not" onclick="stop()">Parar</button>
+        </div>
+      </div>
+      <div class="footer"><p>Created by Samuel S. Rocha</p></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
